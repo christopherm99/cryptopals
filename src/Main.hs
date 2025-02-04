@@ -9,3 +9,4 @@ main = do
   putStrLn $ "1.3: " ++ S1.chal3 "1b37373331363f78151b7f2b783431333d78397828372d363c78373e783a393b3736"
   in14 <- readFile "1.4"
   putStr $ "1.4: " ++ S1.chal4 in14
+  putStrLn $ "1.5: " ++ S1.chal5 "Burning 'em, if you ain't quick and nimble\nI go crazy when I hear a cymbal"

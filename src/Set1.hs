@@ -1,4 +1,4 @@
-module Set1 (chal1, chal2, chal3, chal4) where
+module Set1 (chal1, chal2, chal3, chal4, chal5) where
 
 import Data.Bits (xor)
 import Data.Char (chr)
@@ -16,3 +16,6 @@ chal3 s = foldr1 (maxWith freqScore) [toS (xor (fromH s) (fromS $ replicate (len
 
 chal4 :: String -> String
 chal4 s = foldr1 (maxWith freqScore) (map chal3 (lines s))
+
+chal5 :: String -> String
+chal5 s = toH $ xor (fromS (take (length s) (cycle "ICE"))) (fromS s)
