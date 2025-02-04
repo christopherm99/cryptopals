@@ -19,7 +19,7 @@ common warnings
 executable cryptopals
     import:           warnings
     main-is:          Main.hs
-    other-modules:    Enc
+    other-modules:    Set1, Enc, Helpers
     -- other-extensions:
     build-depends:    base ^>=4.17.2.1
     hs-source-dirs:   src
